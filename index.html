@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment-9 Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+    /*Footer*/
+    footer {
+      background-color: rgb(189, 183, 183);
+      padding: 25px;
+      background-color: rgb(189, 183, 183);
+    }
+    footer{
+        color: white;
+    }
+
+   
+ 
+    /*div1*/
+    .jumbotron{
+       /* background-image: url(./images/jumbotron.jpg);*/
+    }
+    .jumbotron h1 , p{
+        color: black;
+    }
+    /*Social Media
+    .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+    }
+    .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+*/
+
+/*NAVBAR*/
+.header li {
+  float: left;
+  background-color: black;
+}
+.header li a {
+  padding: 20px 30px;
+  color: white;
+}
+.header .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+}
+
+
+
+  </style>
+</head> 
+<body>
+  <header class="header">
+    <ul class="menu">
+ 
+      <li><a href="#work">Our Work</a></li>
+ 
+      <li><a href="#about">About</a></li>
+ 
+      <li><a href="#projects">Projects</a></li>
+ 
+      <li><a href="#contact">Contact</a></li>
+ 
+    </ul>
+ 
+  </header>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Sekhar Bobby</h1>      
+    <p>github.com/Sekharbobby</p>
+    <p>I have built Android Custom Roms for some Android Mobiles based on open source.</code></p>
+    <form>
+<h2>CONNECT WITH US</h2>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-android"></a>
+<a href="#" class="fa fa-pinterest"></a>
+</div>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+    <h3>Services</h3><br>
+</div>
+
+<div class="container">
+        <div class="row gy-4">
+            <div class="col-sm">
+                <div class="card h-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/2048px-Home-icon.svg.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Home</h5>
+                        <p class="card-text">We are Offering everthing securely and private.</p>
+                        <a href="#" class="btn btn-primary">click here</a>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-sm">
+                <div class="card h-100">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Settings</h5>
+                        <p class="card-text">We are offering full access to your credentials</p>
+                        <a href="#" class="btn btn-primary">click here</a>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-sm">
+                <div class="card h-100" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiV6LGkqRZqZ6tm8O3LXL7uyNplg0AOUH49w&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Storage</h5>
+                        <p class="card-text">We are offering limited and secured storage facility.</p>
+                        <a href="#" class="btn btn-primary">click here</a>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-sm">
+                <div class="card h-100" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_T3iHM86n1cbm5OLMjRUcPG_7gw5VTVNGDw&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Apps</h5>
+                        <p class="card-text">We are offering secured and trusted apps only.</p>
+                        <a href="#" class="btn btn-primary">click here</a>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-sm">
+                <div class="card h-100" >
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Products</h5>
+                        <p class="card-text">We are offering certified products only</p>
+                        <a href="#" class="btn btn-primary">click here</a>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="container-fluid" >
+
+      <div class="row">
+
+          <div style="padding: 20px;" >
+
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAC8CAMAAAC672BgAAAAZlBMVEX///8/24Y02oGZ6rs52oM22oIs2X7Y9+Ur2X35/vzz/fjd+Olr4p+W6rni+ez2/vpQ3pCH57Cz78yt7sjK9Nx95arR9uCk7MJk4ZxE3IrA8tWO6LRZ35R15KXr+/Jq4p6f7MAX13avcOp0AAADtklEQVR4nO3b23ajIBSA4UKUaE415qgxaef9X3IwjWmm2KlFjOL6v6t2ZpGFOxvYCH15AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyXafvPWM3bf8YQTGW0aPsZaRQtXfSld0spVNruI2ZCCOmmNz3bKiHCuNVHrKUIz46607NFIGSrJJ9HOpwrV93p11y1fJY3Hc2Js+70rGWW5zqY2au77vRrFggRbW1bx0kgopYz8JBslAgS28bvunHhsjc9i4tAqI1d20uol9W92/70a6vXA3GxaroORbhz3J2eLUIh1zYN93r2VHZhHKyV1HOoub+IL9NtutkcDodNmu9XM7NhOcDeu+/fc+miPHh7/IfL9nBOQqWUvCl/zI7LfP5YraaRnnrbla8D9JrpdM9vv8zyUyEjqVfcr4JQRdk5rUq02WOrEbl/x6/5Wai6QHxGRIbF4RqPic6nY88d78TH6J+uw+h/gbjHIzrm8aqcPUfyJuNf5bogFkr+HIlbPFRyDCzXoOFb64xokBSP8dCbkpoVZgT2x99F4kO2Gd1aoteFnbKJhS7Fi1HV4qU0bDxXfBVEu9Hs30s6LWxDcU2OZETJsc+s0+KWHOOpyDeWs8UjdR7HUDm1GiIVmYxg6xqfncSirDkcHMz1K160nC4eohF4Ho346CwW5Y7W62jEi9BdLHzPjZ3DvLhGw/I96hAsI7ex0NFIfN23pY7WkUfS0/PnudP5oqK8PHQtTwW7YH9O2aOT48mz4uO0sTUnjPI84HfZUttCene+VjNIgtN+nr/9Il+C7DCdponRwruBMjES41YwLZu/EC6uRYVZuPl2qrQyHvl+FPTWdKRUl31mxv+oQ28PZmNnLKtZ9W3mDauP4H5fsiaZfJpDp+YguT/avGFZ+nknLjWCIU/9PJeVs5EYn3dv9g2DEd5Pjw5mZih/UmNV87yqOks+NS1M7wOr5rzFo8t/65rnrc6P941Xk2osbOomGW8O2szp//psR722xmnTUJQt1nptnU1qo9f2AvbT1H6V5fv+rBC/qtFDmSTfHD55c1Hh+zNVh1s35cf16VUHrzFMnkyh7x1tV7+wvmT7VEU37zG+kj7c6Ll08oKrJhg+bFDy54wSEfjwNrRxhdmWD391YXVZyYYa/olSffnZSTCGX4Sau/euhMPfx3dxclTPg4q8+TvO1rK+n/VHu2fNn3rSGPxyUtz/ZKJzfwZ/JP8+eZrT4IMBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACArv0FX10pVykTKVAAAAAASUVORK5CYII=" class="img-fluid" alt="Responsive image">
+
+          </div>
+
+          <div class="col-xl-6 " style="margin-left:18em" >
+
+          <u><h3 style="margin-left: 3em;">Android Custom Rom Developer</h3></u>
+
+          <h4><p style="float: right; display:block;">Our Goal is to give latest updates for even old Android Mobiles .</p>
+
+          </div>
+
+      </div>
+<footer class="container-fluid text-center">
+  <p>Strike will be on ur TechM</p>
+  <p>© Copyright, Sekharbobby</p>
+  </p>
+</footer>
+
+</body>
+</html>
